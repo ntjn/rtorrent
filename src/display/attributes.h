@@ -54,6 +54,12 @@
 #error "SysV or X/Open-compatible Curses header file required"
 #endif
 
+// Override arrow key bindings
+#define KEY_LEFT	0x68
+#define KEY_RIGHT	0x6c
+#define KEY_DOWN	0x6a
+#define KEY_UP		0x6b
+
 // Let us hail the creators of curses for being idiots. The only
 // clever move they made was in the naming.
 #undef timeout
