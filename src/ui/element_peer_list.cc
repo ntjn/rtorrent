@@ -76,7 +76,7 @@ ElementPeerList::ElementPeerList(core::Download* d) :
 
   m_elementInfo->slot_exit(std::bind(&ElementPeerList::activate_display, this, DISPLAY_LIST));
 
-  m_bindings['k']       = std::bind(&ElementPeerList::receive_disconnect_peer, this);
+  m_bindings['0x7b']       = std::bind(&ElementPeerList::receive_disconnect_peer, this);
   m_bindings['*']       = std::bind(&ElementPeerList::receive_snub_peer, this);
   m_bindings['B']       = std::bind(&ElementPeerList::receive_ban_peer, this);
   m_bindings[KEY_LEFT]  = m_bindings['B' - '@'] = std::bind(&slot_type::operator(), &m_slot_exit);

@@ -94,7 +94,7 @@ parse_options(int argc, char** argv) {
     OptionParser optionParser;
 
     // Converted.
-    optionParser.insert_flag('h', std::bind(&print_help));
+    optionParser.insert_flag('H' - '@', std::bind(&print_help));
     optionParser.insert_flag('n', std::bind(&do_nothing_str, std::placeholders::_1));
     optionParser.insert_flag('D', std::bind(&do_nothing_str, std::placeholders::_1));
     optionParser.insert_flag('I', std::bind(&do_nothing_str, std::placeholders::_1));

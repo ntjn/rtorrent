@@ -350,7 +350,7 @@ DownloadList::setup_keys() {
 
   m_uiArray[DISPLAY_DOWNLOAD_LIST]->bindings()[KEY_RIGHT] =
     m_uiArray[DISPLAY_DOWNLOAD_LIST]->bindings()['F' - '@'] = std::bind(&DownloadList::activate_display, this, DISPLAY_DOWNLOAD);
-  m_uiArray[DISPLAY_DOWNLOAD_LIST]->bindings()['l'] = std::bind(&DownloadList::activate_display, this, DISPLAY_LOG);
+  m_uiArray[DISPLAY_DOWNLOAD_LIST]->bindings()['0x7d'] = std::bind(&DownloadList::activate_display, this, DISPLAY_LOG);
 }
 
 }
